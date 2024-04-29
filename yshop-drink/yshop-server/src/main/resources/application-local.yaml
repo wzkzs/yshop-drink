@@ -51,7 +51,7 @@ spring:
           #          url: jdbc:oracle:thin:@127.0.0.1:1521:xe # Oracle 连接的示例
           #          url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=${spring.datasource.dynamic.datasource.master.name} # SQLServer 连接的示例
           username: root
-          password: root
+          password: 1qaz@WSX
         #          username: sa
         #          password: JSm:g(*%lU4ZAkz06cd52KqT3)i1?H7W
         slave: # 模拟从库，可根据自己需要修改
@@ -62,7 +62,7 @@ spring:
           #          url: jdbc:oracle:thin:@127.0.0.1:1521:xe # Oracle 连接的示例
           #          url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=${spring.datasource.dynamic.datasource.slave.name} # SQLServer 连接的示例
           username: root
-          password: root
+          password: 1qaz@WSX
   #          username: sa
   #          password: JSm:g(*%lU4ZAkz06cd52KqT3)i1?H7W
 
@@ -173,8 +173,8 @@ wx:
       key-prefix: wx # Redis Key 的前缀 TODO 解决下 Redis key 管理的配置
       http-client-type: HttpClient # 采用 HttpClient 请求微信公众号平台
   miniapp: # 小程序配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-miniapp-spring-boot-starter/README.md 文档
-    appid: wx001e2dc50bf532df
-    secret: d22aa6a98472ae0b5ee6dd9b7807520c
+    appid: wx3771b6101ebe7360
+    secret: 7fef281ef6ccdcc85f67329bc9a677a4
     config-storage:
       type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
       key-prefix: wa # Redis Key 的前缀 TODO yshop：解决下 Redis key 管理的配置

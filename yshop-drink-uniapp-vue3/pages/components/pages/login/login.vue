@@ -100,6 +100,7 @@ const loginForWechatMini = async (e) => {
 		});
 		return
 	}
+  console.log(e.detail)
 	if (e.detail.encryptedData && e.detail.iv) {
 		let data = await userLoginForWechatMini({
 			encryptedData: e.detail.encryptedData,
